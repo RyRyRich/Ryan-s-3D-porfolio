@@ -1,16 +1,49 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useEffect, useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
+  const computerRef = useRef();
+  const [isHovered, setIsHovered] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0 });
+
+  // Handle mouse movement
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      const rect = event.target.getBoundingClientRect();
+      setMousePosition({
+        x: ((event.clientX - rect.left) / rect.width) * 2 - 1,
+      });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  useFrame(() => {
+    if (computerRef.current) {
+      if (isHovered) {
+        // Manual rotation on the X-axis when hovered
+        computerRef.current.rotation.y = mousePosition.x * Math.PI;
+      }
+    }
+  });
+
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
-      <ambientLight intensity={3}/>
+    <mesh
+      ref={computerRef}
+      onPointerOver={() => setIsHovered(true)}
+      onPointerOut={() => setIsHovered(false)}
+    >
+      <hemisphereLight intensity={0.15} groundColor="black" />
+      <pointLight intensity={1} />
+      <ambientLight intensity={1} />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -19,7 +52,6 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
@@ -56,7 +88,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="demand"
       shadows
       dpr={isMobile ? [1, 1.5] : [1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
@@ -70,7 +102,7 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-
+      <ambientLight intensity={1} />
       <Preload all />
     </Canvas>
   );
