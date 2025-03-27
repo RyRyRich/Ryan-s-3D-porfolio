@@ -58,17 +58,17 @@ export const navLinks = [
 
 const services = [
   {
-    title: "GitHub",
+    title: "-GitHub-",
     icon: github,
     link: "https://github.com/RyRyRich"
   },
   {
-    title: "LinkedIn",
+    title: "-LinkedIn-",
     icon: linkedin,
     link: "https://www.linkedin.com/in/ryan-richardson-b099b4294"
   },
   {
-    title: "Resume",
+    title: "-Resume-",
     icon: resume,
     link: "https://docs.google.com/document/d/12pSaj8qwMpSuuw_ZwywZalCG0L78Dr-p/edit?usp=sharing&ouid=118276524255631017537&rtpof=true&sd=true"
   },
@@ -128,15 +128,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Chick-Fil-a Trainer",
-    company_name: "Chick-fil-a",
-    icon: Cfa,
-    iconBg: "#383E56",
-    date: "July 2020 - August 2023",
+    title: "Co-Founder",
+    company_name: "KickBack",
+    icon: Kickback,
+    iconBg: "#E6DEDD",
+    date: "Decemember 2024 - Present",
     points: [
-      "Led and trained 30+ new hires on food safety procedures, server etiquette, and cashier operations.",
-      "Managed over 50 guest concerns, collaborating with the Shift Lead to ensure customer satisfaction and maintain a positive work environment",
-      "Worked to enhance team efficiency, contributing to smoother operations and improved service delivery",
+      "Co-founded a startup focused on developing a social gathering app using web development technologies.",
+      "Lead the development and maintenance of the app's front-end using JavaScript, React.js and related technologies.",
+      "Focus on creating responsive, interactive designs and ensuring cross-browser compatibility.",
     ],
   },
   {
@@ -164,15 +164,15 @@ const experiences = [
     ],
   },
   {
-    title: "Co-Founder",
-    company_name: "KicckBack",
-    icon: Kickback,
-    iconBg: "#E6DEDD",
-    date: "Decemember 2024 - Present",
+    title: "Chick-Fil-a Trainer",
+    company_name: "Chick-fil-a",
+    icon: Cfa,
+    iconBg: "#383E56",
+    date: "July 2020 - August 2023",
     points: [
-      "Co-founded a startup focused on developing a social gathering app using web development technologies.",
-      "Lead the development and maintenance of the app's front-end using React.js and related technologies.",
-      "Focus on creating responsive, interactive designs and ensuring cross-browser compatibility.",
+      "Led and trained 30+ new hires on food safety procedures, server etiquette, and cashier operations.",
+      "Managed over 50 guest concerns, collaborating with the Shift Lead to ensure customer satisfaction and maintain a positive work environment",
+      "Worked to enhance team efficiency, contributing to smoother operations and improved service delivery",
     ],
   },
 ];
@@ -180,11 +180,11 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "",
     name: "Odera",
     designation: "Senior Electrical Engineer",
     company: "Honewell",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: "",
   },
 ];
 
@@ -203,7 +203,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -224,7 +224,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -245,7 +245,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],

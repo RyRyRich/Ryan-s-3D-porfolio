@@ -55,7 +55,7 @@ const About = () => {
 
       >
         I am an aspiring Electrical and Computer Engineer with strong proficiency in C++, Python, and JavaScript. My expertise spans embedded systems, web development, and 3D interactive experiences using 
-        frameworks like Three.js and React. Passionate about solving complex problems, I thrive in fast-paced environments, 
+        frameworks like Three.js and React. I am passionate about solving complex problems, I thrive in fast-paced environments, 
         leveraging my analytical mindset and entrepreneurial spirit to develop innovative, scalable, and user-centric solutions.
          Whether it's optimizing systems, designing intelligent automation, or creating immersive digital experiences,
          I'm dedicated to pushing the boundaries of technology. Let’s build something remarkable together!

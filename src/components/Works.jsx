@@ -82,7 +82,7 @@ const Works = () => {
         >
           My projects reflect my curiosity to explore real-world applications while crafting innovative and engaging solutions. 
           Each project demonstrates my commitment to understanding complex problems and developing fun, functional creations. 
-          Included are links to code repositories, these examples demonstrate my passion for exploring new challenges and bringing ideas to life.
+          Included are links to code repositories. These examples demonstrate my passion for exploring new challenges and bringing ideas to life. View my github for other Projects
         </motion.p>
       </div>
 
