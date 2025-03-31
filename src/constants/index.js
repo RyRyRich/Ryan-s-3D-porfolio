@@ -70,7 +70,7 @@ const services = [
   {
     title: "-Resume-",
     icon: resume,
-    link: "https://docs.google.com/document/d/12pSaj8qwMpSuuw_ZwywZalCG0L78Dr-p/edit?usp=sharing&ouid=118276524255631017537&rtpof=true&sd=true"
+    link: "https://drive.google.com/file/d/1cQT1xP6oY9k2LMF19siSGTz8wDfWr5lH/view?usp=sharing"
   },
 ];
 
